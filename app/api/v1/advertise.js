@@ -1,6 +1,6 @@
 const Router = require('koa-router')
 
-const {AdvertiseDao} = require('../../dao/advertise')
+const {AdvertiseDao} = require('../../controller/advertise')
 const {AdvertiseValidator, PositiveArticleIdParamsValidator} = require('../../validators/advertise')
 const {Auth} = require('../../../middlewares/auth');
 

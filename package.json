@@ -4,7 +4,8 @@
   "description": "基于 Node.js Koa2 实战开发的一套完整的博客项目网站，使用 Koa2 二次开发一套适合多端的 RESTful API，同时配套完整的后台管理系统，且前端展示既有基于 ejs 服务端渲染，也有基于 Vue.js 前后端分离的 2 套前端网站。",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "prd": "cross-env NODE_ENV=production pm2 start app.js",
     "test": "jest _tests  --forceExit --runInBand --colors"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "axios": "^0.19.0",
     "basic-auth": "^2.0.1",
     "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
     "ejs": "^2.7.4",
     "hashids": "^2.1.0",
     "highlight.js": "^9.16.2",

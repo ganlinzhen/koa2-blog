@@ -11,7 +11,7 @@ const {
   PositiveIdParamsValidator
 } = require('../../validators/category');
 
-const {CategoryDao} = require('../../dao/category');
+const {CategoryDao} = require('../../controller/category');
 const {Auth} = require('../../../middlewares/auth');
 
 const {Resolve} = require('../../lib/helper');

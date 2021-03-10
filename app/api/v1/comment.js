@@ -1,6 +1,6 @@
 const Router = require('koa-router')
 
-const {CommentDao} = require('../../dao/comment')
+const {CommentDao} = require('../../controller/comment')
 const {CommentValidator, PositiveArticleIdParamsValidator} = require('../../validators/comment')
 const {Auth} = require('../../../middlewares/auth');
 

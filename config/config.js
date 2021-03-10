@@ -1,11 +1,13 @@
+const { isDev } = require('../app/lib/env')
+
 module.exports = {
     environment: 'dev',
     database: {
         dbName: 'boblog',
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 3306,
-        user: 'root',
-        password: '12345678'
+        user: isDev ? 'root' : 'root',
+        password: isDev ? '12345678' : '7340aaec89a094dd',
     },
     REDIS_CONF: {
         port: 6379,
@@ -20,5 +22,9 @@ module.exports = {
         appId: '',
         appSecret: '',
         loginUrl: 'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
+    },
+    // 七牛配置
+    qiniu: {
+
     }
 }

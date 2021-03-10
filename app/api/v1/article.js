@@ -6,8 +6,8 @@ const {
 } = require('../../validators/article');
 
 const {Auth} = require('../../../middlewares/auth');
-const {ArticleDao} = require('../../dao/article');
-const {CommentDao} = require('../../dao/comment');
+const {ArticleDao} = require('../../controller/article');
+const {CommentDao} = require('../../controller/comment');
 
 const {Resolve} = require('../../lib/helper');
 const res = new Resolve();
