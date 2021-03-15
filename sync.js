@@ -7,7 +7,7 @@ const { sequelize } = require('./core/db')
 const fs = require('fs');
 
 // 挨个导入model
-let files = fs.readdirSync(__dirname + './app/models');
+let files = fs.readdirSync(__dirname + '/app/models');
 
 let js_files = files.filter((f)=>{
     return f.endsWith('.js');
