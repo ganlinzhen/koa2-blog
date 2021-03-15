@@ -7,7 +7,7 @@ module.exports = {
         host: '127.0.0.1',
         port: 3306,
         user: isDev ? 'root' : 'root',
-        password: isDev ? '12345678' : '7340aaec89a094dd',
+        password: isDev ? '12345678' : 'Zgl428415@mysql',
     },
     REDIS_CONF: {
         port: 6379,
