@@ -23,7 +23,7 @@ Article.init({
     author: {
         type: Sequelize.STRING(30),
         allowNull: true,
-        defaultValue: '梁凤波',
+        defaultValue: 'zhenganlin',
         comment: '文章作者'
     },
     content: {

@@ -1,5 +1,5 @@
 const { isDev } = require('../app/lib/env')
-
+console.log('开发环境：',isDev)
 module.exports = {
     environment: 'dev',
     database: {
