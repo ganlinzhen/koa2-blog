@@ -11,7 +11,7 @@ class AdminDao {
     // 创建用管理员
     static async create(params) {
         const { email, password, nickname } = params
-
+        console.log('查询是否已经存在管理员')
         const hasAdmin = await Admin.findOne({
             where: {
                 email,

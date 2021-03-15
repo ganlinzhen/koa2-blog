@@ -1,10 +1,6 @@
-const {
-    Rule,
-    LinValidator
-} = require('../../core/lin-validator-v2')
+const { Rule, LinValidator } = require('../../core/lin-validator-v2')
 
-const { Admin } = require('../models/admin')
-const { LoginType } = require('../lib/enum')
+const Admin = require('../models/admin')
 
 class RegisterValidator extends LinValidator {
     constructor() {

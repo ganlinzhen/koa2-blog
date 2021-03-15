@@ -16,10 +16,10 @@ const router = new Router({ prefix: '/api/v1/admin'})
 
 // 管理员注册
 router.post('/register', async (ctx) => {
-
+    console.log('创建管理员')
     // 通过验证器校验参数是否通过
     const v = await new RegisterValidator().validate(ctx);
-
+    console.log('校验参数是否通过', v)
     // 创建管理员
     const admin = await AdminDao.create({
         email: v.get('body.email'),
