@@ -27,7 +27,7 @@ sequelize.authenticate().then(() => {
 })
 
 // 执行同步
-sequelize.sync({ force: true }).then(async () => {
+sequelize.sync({ force: false }).then(async () => {
     console.log('sync ok')
     process.exit()
 })
