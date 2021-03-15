@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "sync": "cross-env NODE_ENV=production nodemon sync.js",
     "prd": "cross-env NODE_ENV=production pm2 start app.js",
     "test": "jest _tests  --forceExit --runInBand --colors"
   },
