@@ -52,6 +52,4 @@ Admin.init({
 })
 
 
-module.exports = {
-    Admin
-}
+module.exports = Admin

@@ -1,4 +1,4 @@
-const { Advertise } = require('../models/advertise')
+const Advertise = require('../models/advertise')
 
 class AdvertiseDao {
     // 新增广告

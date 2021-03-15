@@ -2,7 +2,7 @@ const moment = require('moment');
 
 const { Sequelize, Model } = require('sequelize')
 const { sequelize } = require('../../core/db')
-const { Comment } = require('../models/comment')
+const Comment = require('../models/comment')
 
 class Reply extends Model {
 
@@ -54,6 +54,4 @@ Reply.belongsTo(Comment, {
     as: 'comment'
 })
 
-module.exports = {
-    Reply
-}
+module.exports = Reply

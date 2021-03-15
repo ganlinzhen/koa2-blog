@@ -51,6 +51,4 @@ Comment.init({
     tableName: 'comment'
 })
 
-module.exports = {
-    Comment
-}
+module.exports = Comment

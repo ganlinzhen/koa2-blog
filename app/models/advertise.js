@@ -38,6 +38,4 @@ Advertise.init({
     tableName: 'advertise'
 })
 
-module.exports = {
-    Advertise
-}
+module.exports = Advertise

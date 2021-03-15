@@ -44,6 +44,4 @@ Category.init({
     tableName: 'category'
 })
 
-module.exports = {
-    Category
-}
+module.exports = Category

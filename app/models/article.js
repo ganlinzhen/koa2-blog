@@ -1,7 +1,7 @@
 const moment = require('moment');
 const { sequelize } = require('../../core/db')
 const { Sequelize, Model } = require('sequelize')
-const { Category } = require('./category')
+const Category = require('./category')
 
 // 定义文章模型
 class Article extends Model {
@@ -74,6 +74,4 @@ Article.belongsTo(Category, {
     foreignKey: 'category_id', targetKey: 'id', as: 'category'
 })
 
-module.exports = {
-    Article
-}
+module.exports = Article

@@ -1,7 +1,7 @@
 const xss = require('xss')
 
-const { Comment } = require('../models/comment')
-const { Reply } = require('../models/reply')
+const Comment = require('../models/comment')
+const Reply = require('../models/reply')
 
 class CommentDao {
     // 创建评论
